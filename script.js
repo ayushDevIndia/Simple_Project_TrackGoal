@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded",()=>{
       const text_status_text=totalGoals-completedGoals;
       progressBar.style.width = `${progressPercent}%`;
       progressBar.textContent = `${completedGoals}/${totalGoals} Completed`;
-      text_statuse.textContent = `Add ${text_status_text} Goals Also`;
+      text_statuse.textContent = `Left ${text_status_text} Goals`;
     }
     checkboxes.forEach(checkbox => {
       checkbox.addEventListener("change", updateProgress);
